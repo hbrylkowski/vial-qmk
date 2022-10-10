@@ -19,17 +19,12 @@
 #include "config_common.h"
 
 /* key matrix size */
-#define MATRIX_ROWS 6
+#define MATRIX_ROWS 5
 #define MATRIX_COLS 4
 
 /* key matrix pins */
-#define MATRIX_ROW_PINS { E6, B7, D0, D1, D2, B3 }
-#define MATRIX_COL_PINS { D3, D4, D6, D7 }
-
-/*ENCODER*/
-#define ENCODERS_PAD_A { F0 }
-#define ENCODERS_PAD_B { F1 }
-#define ENCODER_RESOLUTION 4
+#define MATRIX_ROW_PINS { F5, F6, F7, B1, B3 }
+#define MATRIX_COL_PINS { D7, E6, B4, B5 }
 
 /* COL2ROW or ROW2COL */
 #define DIODE_DIRECTION COL2ROW
@@ -43,5 +38,6 @@
 /* Locking resynchronize hack */
 #define LOCKING_RESYNC_ENABLE
 
-
-
+#define RGB_DI_PIN D3
+// The number of LEDs connected
+#define DRIVER_LED_TOTAL 20
